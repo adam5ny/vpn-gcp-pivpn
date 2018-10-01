@@ -3,7 +3,9 @@
 - Many networks block VPN services by filtering traffic by protocol, port or both
 - For example, public libraries might block all [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) traffic, or all traffic not using ports 80 (http) or 443 (https)
 - Because many third party VPN services use some combination of resources blocked above, one way to improve privacy on public networks is to run a custom VPN server in the cloud
-- Typical monthly charge for the setup below as of 10/2018 is < $20 for 100GB of traffic and 24/7 usage
+- Cost
+    - selective usage of the setup below is < $3. This means stopping the remote instance when not used and not using the VPN to access high-traffic resources such as video.
+    - typical monthly charge as of 10/2018 is < $20 for 100GB of traffic and 24/7 usage. This is in line with cost of third party VPN providers but ensures complete privacy.
 
 ## Requirements:
 - This tutorial was written for macOS but works on Linux and Windows with minimal modifications such as proper adjustments to folder locations: 
