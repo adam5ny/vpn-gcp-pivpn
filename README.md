@@ -37,9 +37,9 @@
         >> ssh
         >> curl -L https://install.pivpn.io | bash
 
-Follow all steps using default values except ports and protocol. Select port 443 and protocol TCP. Select reboot at the end of instalation.
+Follow all steps using default values except for port and protocol. Select port 443 and protocol TCP. Select reboot at the end of the instalation.
 
-Check if server is working. Enter the commands below. Ports 22 and 443 should be open .
+Check if server is working. Enter the commands below. Ports 22 and 443 should be open.
 
         >> python gcloud.py
         >> ssh
