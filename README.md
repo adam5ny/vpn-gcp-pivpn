@@ -16,9 +16,10 @@
 
 ## 1) Login to [GCP console](https://console.cloud.google.com) and create a Compute Engine instance
 
-- Machine type: *small* (even *micro* is "good enough" in some cases)
+- Machine type: *micro* is "good enough" in most cases
+- Image: Ubuntu 16.04 LTS
 - Region and zone: select the closest location to your physical location
-- Check *allow https traffic*
+- Check: *allow https traffic*
 - Recommended: use a *pre-emptible* instance to lower charges
 - In GCP console, go to VPC network > External IP addresses > switch the type of your instance IP from "Ephemeral" to "Static". This will be your public IP
 
@@ -29,7 +30,9 @@
         zone = replace_with_instance_zone
         instance_id = replace_with_instance_id
         user = replace_with_user
-        gcloud_cmd = replace_with_gcloud_command_typically_gcloud
+        gcloud_cmd = gcloud_command
+
+Note: *gcloud_cmd* is typically just **gcloud** if gcloud SDK is installed globally on your system. However, it may be something like **./google-cloud-sdk/bin/gcloud** if it's installed just locally.
 
 ## 3) Create PiVPN instance
 
@@ -43,6 +46,7 @@ Check if server is working. Enter the commands below. Ports 22 and 443 should be
 
         >> python gcloud.py
         >> ssh
+        >> sudo apt-get install nmap
         >> nmap your-public-ip-from-step-1
 
 ## 4) Create VPN credentials
