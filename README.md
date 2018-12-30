@@ -40,7 +40,7 @@ Note: *gcloud_cmd* is typically just **gcloud** if gcloud SDK is installed globa
         >> ssh
         >> curl -L https://install.pivpn.io | bash
 
-Follow all steps using default values except for port and protocol. Select port 443 and protocol TCP. Select reboot at the end of the instalation.
+Follow all steps using default values except for port and protocol. Select port 443 and protocol TCP. Select reboot at the end of the installation.
 
 Check if server is working. Enter the commands below. Ports 22 and 443 should be open.
 
