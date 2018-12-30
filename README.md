@@ -8,7 +8,7 @@
     - typical monthly charge as of 10/2018 is < $20 for 100GB of traffic and 24/7 usage. This is in line with cost of third party VPN providers but ensures complete privacy.
 
 ## Requirements:
-- This tutorial was written for macOS but works on Linux and Windows with minimal modifications such as proper adjustments to folder locations: 
+- This tutorial was written for macOS but works on Linux and Windows with minimal modifications such as proper modifications of folder locations: 
     - macOS and Linux: ~/Desktop
     - Windows: c:\Users\(username)\Desktop
 - Instal Python 3.6+
